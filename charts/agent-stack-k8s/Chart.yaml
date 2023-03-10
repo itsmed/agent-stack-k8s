@@ -1,7 +1,12 @@
 apiVersion: v2
 name: agent-stack-k8s
 description: A Helm chart for the Buildkite Kubernetes agent stack
-
+dependencies:
+  - name: common
+    repository: https://charts.bitnami.com/bitnami
+    tags:
+      - bitnami-common
+    version: 2.1.1
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives
