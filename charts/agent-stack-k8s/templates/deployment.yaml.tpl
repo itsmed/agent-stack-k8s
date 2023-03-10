@@ -25,6 +25,7 @@ spec:
       {{- end }}
         checksum/config: {{ include (print $.Template.BasePath "/config.yaml.tpl") . | sha256sum }}
         checksum/secrets: {{ include (print $.Template.BasePath "/secrets.yaml.tpl") . | sha256sum }}
+    {{- end }}  
     spec:
       serviceAccountName: {{ template "common.names.fullname" . }}
       nodeSelector:
