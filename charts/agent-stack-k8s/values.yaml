@@ -5,3 +5,9 @@ nodeSelector: {}
 
 config:
   org: ""
+
+image: "a string should work"
+agentToken: "String length must be greater than or equal to 1"
+graphqlToken: "String length must be greater than or equal to 1"
+config:
+  org: "String length must be greater than or equal to 1"
